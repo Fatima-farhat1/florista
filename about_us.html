@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Florista Flowers</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body, html {height: 100%; margin: 0; padding: 0; font-family: 'Amatic SC', cursive; background-color: #fdf6f0;}
+        
+        .navbar {
+            background-color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+        }
+
+        .navbar .left-menu a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar .left-menu a:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown .dropbtn {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 28px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 160px;
+            right: 0;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444;
+            color: #d95d90;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #d95d90;
+        }
+
+        .cart-icon {
+            font-size: 36px;
+            color: #fff;
+            padding: 0 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .cart-icon:hover {
+            color: #d95d90;
+        }
+
+        .right-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .about-header {
+            font-size: 60px;
+            color: #d95d90;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+            font-family: 'Amatic SC', cursive;
+        }
+
+        .mission-section, .story-section, .values-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #a64d79;
+            margin-bottom: 15px;
+            font-family: 'Amatic SC', cursive;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .value-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .value-list li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar-placeholder").innerHTML = data);
+  </script>
+    <div class="about-container">
+        <h1 class="about-header">Our Story</h1>
+
+        <div class="story-section">
+            <h2 class="section-title">A Budding Beginning</h2>
+            <p>Florista Flowers started with a simple dream: to share the beauty and joy of flowers with everyone. Founded in 2020 by joana ali, our journey began in a small local shop in saida.joana had a deep passion for , the vibrant colors of roses, the delicate fragrance of lilies, the art of floral arrangement.</p>
+            <p>Driven by this passion, joana carefully selected the freshest and most exquisite blooms, creating arrangements that spoke from the heart. Word spread quickly about the quality and artistry of Florista Flowers, and soon, our little shop blossomed into a beloved part of the community.</p>
+        </div>
+
+        <div class="mission-section">
+            <h2 class="section-title">Our Mission</h2>
+            <p>At Florista Flowers, our mission is to  brighten lives through beautiful floral designs and exceptional service, connect people through the language of flowers, provide the freshest and most stunning floral arrangements for every occasion. We strive to exceed our customers' expectations with every bloom and every interaction.</p>
+        </div>
+
+        
+        <p>Thank you for being a part of the Florista Flowers story. We look forward to helping you celebrate life's moments with the perfect flowers.</p>
+    </div>
+    <footer class="footer">
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram w3-hover-opacity"></i></a>
+            <a href="mailto:info@floristaflowers.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+        </div>
+        <p>&copy; 2025 Florista Flowers. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

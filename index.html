@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Florista Flowers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External Styles and Fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body, html { height: 100%; margin: 0; }
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Amatic SC", sans-serif;
+        }
+
+        .bgimg {
+            background-image: url("images/home-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 90%;
+        }
+
+        .navbar {
+            background-color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+        }
+
+        .navbar .left-menu a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar .left-menu a:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown .dropbtn {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 28px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 160px;
+            right: 0;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444;
+            color: #d95d90;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #d95d90;
+        }
+
+        .cart-icon {
+            font-size: 36px;
+            color: #fff;
+            padding: 0 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .cart-icon:hover {
+            color: #d95d90;
+        }
+
+        .right-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="navbar-placeholder"></div>
+
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+<!-- Header Background Image Section -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-black w3-hide-small" style="font-size:100px">Florista<br>Flowers</span>
+        <p><a href="items.html" class="w3-button w3-xxlarge w3-black w3-round-large">Let me see the products</a></p>
+    </div>
+</header>
+
+
+<footer class="footer">
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram w3-hover-opacity"></i></a>
+            <a href="mailto:info@floristaflowers.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+        </div>
+        <p>&copy; 2025 Florista Flowers. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
